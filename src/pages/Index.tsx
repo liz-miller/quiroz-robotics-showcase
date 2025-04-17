@@ -5,7 +5,7 @@ import { ContactSection } from "@/components/ContactSection";
 
 const Index = () => {
   return (
-    <div className="scroll-smooth font-inter">
+    <div className="scroll-smooth font-space">
       <HeroSection />
       <ProjectsSection />
       <ContactSection />

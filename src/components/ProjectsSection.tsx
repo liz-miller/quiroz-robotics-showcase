@@ -1,3 +1,4 @@
+
 import { ProjectCard } from "./ProjectCard";
 
 export const ProjectsSection = () => {
@@ -31,9 +32,9 @@ export const ProjectsSection = () => {
   ];
 
   return (
-    <section className="py-20 px-4 md:px-8 lg:px-16 bg-gray-50">
+    <section className="py-20 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-slate-900 to-blue-950">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">Featured Projects</h2>
+        <h2 className="text-3xl font-bold mb-12 text-center text-blue-200 font-space">Featured Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project) => (
             <ProjectCard key={project.title} {...project} />
