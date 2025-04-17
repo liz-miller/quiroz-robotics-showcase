@@ -1,4 +1,3 @@
-
 import { ProjectCard } from "./ProjectCard";
 
 export const ProjectsSection = () => {
@@ -7,7 +6,7 @@ export const ProjectsSection = () => {
       title: "TurtleBot Design Platform – Generative Robotic Art",
       summary: "Designed a programmable robot platform that autonomously creates generative art for commercial clients using a block-based simulation. Built 10 unique designs with increasing complexity and optimized execution speed for profitability.",
       techStack: "Blockly, JavaScript, movement algorithm design, simulation optimization",
-      videoUrl: "https://player.vimeo.com/video/1051328637",
+      videoUrl: "https://player.vimeo.com/video/1053052084",
     },
     {
       title: "Healthy Plant Monitor – Smart Ag Sensor System",
