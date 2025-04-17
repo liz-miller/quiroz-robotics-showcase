@@ -1,4 +1,6 @@
 
+import React from 'react';
+
 interface ProjectCardProps {
   title: string;
   summary: string;
@@ -10,10 +12,18 @@ export const ProjectCard = ({ title, summary, techStack, videoUrl }: ProjectCard
   return (
     <div className="bg-white rounded-xl shadow-lg p-6 transition-transform duration-300 hover:scale-[1.02]">
       <div className="aspect-video bg-gray-100 rounded-lg mb-6">
-        {/* Vimeo placeholder - will be updated later */}
-        <div className="w-full h-full flex items-center justify-center text-gray-400">
-          Video Demo Coming Soon
-        </div>
+        {videoUrl ? (
+          <iframe 
+            src={videoUrl}
+            className="w-full h-full rounded-lg"
+            allow="autoplay; fullscreen; picture-in-picture"
+            title={`Video for ${title}`}
+          />
+        ) : (
+          <div className="w-full h-full flex items-center justify-center text-gray-400">
+            Video Demo Coming Soon
+          </div>
+        )}
       </div>
       <h3 className="text-xl font-semibold mb-3 text-gray-900">{title}</h3>
       <p className="text-gray-600 mb-4 leading-relaxed">{summary}</p>
